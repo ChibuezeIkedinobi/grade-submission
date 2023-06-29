@@ -9,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.*;
+
 @Getter
 @Setter
 @RequiredArgsConstructor
@@ -35,6 +36,7 @@ public class Course {
     @NonNull
     @Column(name = "description", nullable = false)
     private String description;
+
 
 
     @JsonIgnore

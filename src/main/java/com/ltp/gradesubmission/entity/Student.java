@@ -34,7 +34,9 @@ public class Student {
     @NonNull
     @Column(name = "birth_date", nullable = false)
     private LocalDate birthDate;
-    
+
+
+
     @JsonIgnore
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)   // One student can have many grades. one to many
     private List<Grade> grades;

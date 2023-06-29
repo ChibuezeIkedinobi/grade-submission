@@ -37,6 +37,8 @@ public class Grade {
     @JoinColumn(name = "student_id", referencedColumnName = "id")    // student_id column joins both tables
     private Student student;
 
+
+
     @ManyToOne(optional = false)     // Many grades belong to one course
     @JoinColumn(name = "course_id", referencedColumnName = "id")     // course_id joins both tables
     private Course course;
